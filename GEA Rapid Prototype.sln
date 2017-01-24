@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{712B34DB-3FE4-D558-A412-134C201456E7}") = "GEA Rapid Prototype", "Assembly-CSharp.csproj", "{12B510AF-61FC-F0EE-90A7-29908153E08C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12B510AF-61FC-F0EE-90A7-29908153E08C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12B510AF-61FC-F0EE-90A7-29908153E08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12B510AF-61FC-F0EE-90A7-29908153E08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12B510AF-61FC-F0EE-90A7-29908153E08C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
