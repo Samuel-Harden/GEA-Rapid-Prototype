@@ -14,10 +14,10 @@ public class PlatformCheck : MonoBehaviour {
 	{
 		if (col.gameObject.tag == "Player") 
 		{
-			Debug.Log ("Its the player");
+			//Debug.Log ("Its the player");
 			if (Input.GetKey (KeyCode.S))
 			{
-				Debug.Log ("Disabling");
+				//Debug.Log ("Disabling");
 				coll.enabled = !coll.enabled;
 				StartCoroutine (enableCollider ());
 			}

@@ -3,16 +3,16 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 
-	public float speed;
-
 	private Rigidbody2D willyRB;
 	private Animator anim;
-
 	private bool facingRight;
+
+	public float speed;
 	public float jumpHeight;
 	public bool grounded;
 
-
+	public Transform rayStart;
+	public Transform rayEnd;
 
 	// Use this for initialization
 	void Start () 
@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
+		rayCasting ();
+
 		if (Input.GetKey (KeyCode.A)) 
 		{
 			willyRB.velocity = new Vector2 (-speed * Time.deltaTime, willyRB.velocity.y);
@@ -40,7 +42,7 @@ public class PlayerMovement : MonoBehaviour {
 					willyRB.AddForce (Vector2.up * jumpHeight);
 				}
 			}
-
+			
 		setGrounded ();
 	}
 
@@ -75,5 +77,16 @@ public class PlayerMovement : MonoBehaviour {
 	{
 		anim.SetBool ("Grounded", grounded);
 		//Debug.Log ("Setting Grounded Status");
+	}
+
+	void rayCasting()
+	{
+		// Debug line so we can see where the line is in the editor
+		Debug.DrawLine (rayStart.position, rayEnd.position, Color.magenta);
+
+		// Sets the grounded bool too true if it casts 
+		// onto anything with the "Ground" layer, false if not
+		grounded = Physics2D.Linecast (rayStart.position, rayEnd.position,
+			1 << LayerMask.NameToLayer("Ground"));
 	}
 }
