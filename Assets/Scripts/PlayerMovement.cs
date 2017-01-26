@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour {
 	private Rigidbody2D willyRB;
 	private Animator anim;
 	private bool facingRight;
+	public bool onRope;
 
 	public float speed;
 	public float jumpHeight;
@@ -14,17 +15,22 @@ public class PlayerMovement : MonoBehaviour {
 	public Transform rayStart;
 	public Transform rayEnd;
 
+	private Vector2 tempPos;
+
 	// Use this for initialization
 	void Start () 
 	{
 		willyRB = gameObject.GetComponent<Rigidbody2D>();
 		anim = GetComponent <Animator> ();
 		facingRight = true;
+		onRope = false;
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
+		tempPos = transform.position;
+
 		rayCasting ();
 
 		if (Input.GetKey (KeyCode.A)) 
@@ -35,14 +41,26 @@ public class PlayerMovement : MonoBehaviour {
 			willyRB.velocity = new Vector2 (speed * Time.deltaTime, willyRB.velocity.y);
 		}
 		if (Input.GetKeyDown (KeyCode.Space))
+		{
+			// Only jump if already on the ground
+			if (grounded == true)
 			{
-				// Only jump if already on the ground
-				if (grounded == true)
-				{
-					willyRB.AddForce (Vector2.up * jumpHeight);
-				}
+				willyRB.AddForce (Vector2.up * jumpHeight);
 			}
+		}
+
+		if (Input.GetKey (KeyCode.W) && onRope == true) 
+		{
+			tempPos.y += 1;
+			transform.position = Vector2.Lerp (transform.position, tempPos, Time.deltaTime);
+		}
+		if (Input.GetKey (KeyCode.S) && onRope == true)
+		{
+			tempPos.y -= 1;
+			transform.position = Vector2.Lerp (transform.position, tempPos, Time.deltaTime);
+		}
 			
+		setZRotation ();
 		setGrounded ();
 	}
 
@@ -72,6 +90,15 @@ public class PlayerMovement : MonoBehaviour {
 			transform.localScale = theScale;
 		}
 	}
+
+	void setZRotation()
+	{
+		if (transform.rotation.z != 0 && onRope == false)
+		{
+			transform.rotation = Quaternion.Euler (0, 0, 0);
+		}
+	}
+		
 
 	void setGrounded()
 	{
