@@ -118,14 +118,17 @@ public class PlayerMovement : MonoBehaviour {
 		grounded = Physics2D.Linecast (rayStart.position, rayEnd.position,
 			1 << LayerMask.NameToLayer("Ground"));
 	}
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Enemy")
         {
             transform.position = respawnPoint;
         }
+
         if (other.tag == "Checkpoint")
         {
+			Debug.Log ("Setting new Waypoint");
             respawnPoint = other.transform.position;
         }
     }

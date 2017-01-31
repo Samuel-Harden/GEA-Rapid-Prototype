@@ -45,6 +45,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ArrowRight.cs" />
+     <Compile Include="Assets\EnemyLR.cs" />
+     <Compile Include="Assets\EnemyUD.cs" />
      <Compile Include="Assets\Scripts\CameraControl.cs" />
      <Compile Include="Assets\Scripts\GroundedCheck.cs" />
      <Compile Include="Assets\Scripts\LevelTrigger.cs" />

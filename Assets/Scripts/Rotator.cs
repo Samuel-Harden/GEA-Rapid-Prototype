@@ -9,7 +9,7 @@ public class Rotator : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		reverseRotation = true;
+		//reverseRotation = true;
 	}
 
 	// Update is called once per frame
