@@ -17,7 +17,7 @@ public class RopeHolder : MonoBehaviour {
 	{
 		if (playerAttached == true) 
 		{
-			if (Input.GetKey (KeyCode.E)) 
+			if (Input.GetKeyDown (KeyCode.Space)) 
 			{
 				Debug.Log ("Disabling");
 				releasePlayer ();

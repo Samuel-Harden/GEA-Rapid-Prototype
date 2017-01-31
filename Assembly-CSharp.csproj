@@ -45,15 +45,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ArrowRight.cs" />
-     <Compile Include="Assets\EnemyLR.cs" />
-     <Compile Include="Assets\EnemyUD.cs" />
+     <Compile Include="Assets\Scripts\ArrowRight.cs" />
      <Compile Include="Assets\Scripts\CameraControl.cs" />
+     <Compile Include="Assets\Scripts\EnemyLR.cs" />
+     <Compile Include="Assets\Scripts\EnemyUD.cs" />
      <Compile Include="Assets\Scripts\GroundedCheck.cs" />
      <Compile Include="Assets\Scripts\LevelTrigger.cs" />
+     <Compile Include="Assets\Scripts\MenuScript.cs" />
+     <Compile Include="Assets\Scripts\MovingPlatform.cs" />
+     <Compile Include="Assets\Scripts\MovingPlatformHolder.cs" />
      <Compile Include="Assets\Scripts\Pickup.cs" />
      <Compile Include="Assets\Scripts\PlatformCheck.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Respawn.cs" />
      <Compile Include="Assets\Scripts\RopeHolder.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
  <Reference Include="UnityEngine.UI">

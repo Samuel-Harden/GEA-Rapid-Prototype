@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour {
 	private Animator anim;
 	private bool facingRight;
 	public bool onRope;
-    public Vector3 respawnPoint;
 
 	public float speed;
 	public float jumpHeight;
@@ -25,7 +24,7 @@ public class PlayerMovement : MonoBehaviour {
 		anim = GetComponent <Animator> ();
 		facingRight = true;
 		onRope = false;
-        respawnPoint = transform.position;
+        //respawnPoint = transform.position;
 	}
 	
 	// Update is called once per frame
@@ -118,18 +117,4 @@ public class PlayerMovement : MonoBehaviour {
 		grounded = Physics2D.Linecast (rayStart.position, rayEnd.position,
 			1 << LayerMask.NameToLayer("Ground"));
 	}
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "Enemy")
-        {
-            transform.position = respawnPoint;
-        }
-
-        if (other.tag == "Checkpoint")
-        {
-			Debug.Log ("Setting new Waypoint");
-            respawnPoint = other.transform.position;
-        }
-    }
 }
