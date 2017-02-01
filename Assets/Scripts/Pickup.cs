@@ -4,6 +4,7 @@ using System.Collections;
 public class Pickup : MonoBehaviour {
 
 	public GameObject player;
+	public GameData gameManager;
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +22,8 @@ public class Pickup : MonoBehaviour {
 		{
 			Destroy (gameObject);
 			Debug.Log ("Willy has collected me");
+			gameManager.itemCollected ();
+
 		}
 	}
 }

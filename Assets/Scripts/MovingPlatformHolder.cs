@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MovingPlatformHolder : MonoBehaviour {
-
+public class MovingPlatformHolder : MonoBehaviour 
+{
 	public GameObject player;
 
 	void OnTriggerEnter2D(Collider2D other)

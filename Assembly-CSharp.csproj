@@ -47,9 +47,12 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ArrowRight.cs" />
      <Compile Include="Assets\Scripts\CameraControl.cs" />
+     <Compile Include="Assets\Scripts\CollectablesCounter.cs" />
      <Compile Include="Assets\Scripts\EnemyLR.cs" />
      <Compile Include="Assets\Scripts\EnemyUD.cs" />
+     <Compile Include="Assets\Scripts\GameData.cs" />
      <Compile Include="Assets\Scripts\GroundedCheck.cs" />
+     <Compile Include="Assets\Scripts\Ladder.cs" />
      <Compile Include="Assets\Scripts\LevelTrigger.cs" />
      <Compile Include="Assets\Scripts\MenuScript.cs" />
      <Compile Include="Assets\Scripts\MovingPlatform.cs" />
@@ -60,6 +63,7 @@
      <Compile Include="Assets\Scripts\Respawn.cs" />
      <Compile Include="Assets\Scripts\RopeHolder.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
+     <Compile Include="Assets\Scripts\ScoreCounter.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity(New)/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

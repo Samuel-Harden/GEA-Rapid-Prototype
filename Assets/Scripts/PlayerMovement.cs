@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour {
 	public float speed;
 	public float jumpHeight;
 	public bool grounded;
+	public bool onLadder;
 
 	public Transform rayStart;
 	public Transform rayEnd;
@@ -34,32 +35,9 @@ public class PlayerMovement : MonoBehaviour {
 
 		rayCasting ();
 
-		if (Input.GetKey (KeyCode.A)) 
-		{
-			willyRB.velocity = new Vector2 (-speed * Time.deltaTime, willyRB.velocity.y);
-		}
-		if (Input.GetKey (KeyCode.D)) {
-			willyRB.velocity = new Vector2 (speed * Time.deltaTime, willyRB.velocity.y);
-		}
-		if (Input.GetKeyDown (KeyCode.Space))
-		{
-			// Only jump if already on the ground
-			if (grounded == true)
-			{
-				willyRB.AddForce (Vector2.up * jumpHeight);
-			}
-		}
+		movement ();
 
-		if (Input.GetKey (KeyCode.W) && onRope == true) 
-		{
-			tempPos.y += 1;
-			transform.position = Vector2.Lerp (transform.position, tempPos, Time.deltaTime);
-		}
-		if (Input.GetKey (KeyCode.S) && onRope == true)
-		{
-			tempPos.y -= 1;
-			transform.position = Vector2.Lerp (transform.position, tempPos, Time.deltaTime);
-		}
+		checkLadder ();
 			
 		setZRotation ();
 		setGrounded ();
@@ -71,6 +49,55 @@ public class PlayerMovement : MonoBehaviour {
 
 		Animating (h);
 		flip (h);
+	}
+
+	void movement()
+	{
+		if (Input.GetKey (KeyCode.A)) 
+		{
+			tempPos.x -= 2;
+			transform.position = Vector2.Lerp (transform.position, tempPos, Time.deltaTime);
+		}
+
+		if (Input.GetKey (KeyCode.D)) 
+		{
+			tempPos.x += 2;
+			transform.position = Vector2.Lerp (transform.position, tempPos, Time.deltaTime);
+		}
+
+		if (Input.GetKeyDown (KeyCode.Space) && onLadder == false)
+		{
+			// Only jump if already on the ground
+			if (grounded == true)
+			{
+				willyRB.AddForce (Vector2.up * jumpHeight);
+			}
+		}
+
+		if (Input.GetKey (KeyCode.W) && (onRope == true || onLadder == true)) 
+		{
+			tempPos.y += 1;
+			transform.position = Vector2.Lerp (transform.position, tempPos, Time.deltaTime);
+		}
+
+		if (Input.GetKey (KeyCode.S) && (onRope == true || onLadder == true))
+		{
+			tempPos.y -= 1;
+			transform.position = Vector2.Lerp (transform.position, tempPos, Time.deltaTime);
+		}
+			
+		if (onLadder == true) 
+		{
+			willyRB.velocity = new Vector2 (0.0f, 0.0f);
+		}
+	}
+
+	void checkLadder()
+	{
+		if (onLadder == true) {
+			willyRB.gravityScale = 0;
+		} else
+			willyRB.gravityScale = 1;
 	}
 
 	void Animating(float h)
