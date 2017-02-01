@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ArrowRight : MonoBehaviour
+public class aArrowRight : MonoBehaviour
 {
 
     private Rigidbody2D enemyRB;

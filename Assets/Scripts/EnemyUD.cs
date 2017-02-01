@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyUD : MonoBehaviour
+public class eEnemyUD : MonoBehaviour
 {
     private Rigidbody2D enemyRB;
     float startPos;
