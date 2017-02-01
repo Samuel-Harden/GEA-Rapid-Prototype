@@ -7,7 +7,6 @@ TagManager:
   - Checkpoint
   - Enemy
   - Ground
-  - GameManager
   layers:
   - Default
   - TransparentFX
@@ -44,4 +43,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 3951519449
     locked: 0

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class eEnemyLR : MonoBehaviour
+public class EnemyLR : MonoBehaviour
 
 {
     private Rigidbody2D enemyRB;

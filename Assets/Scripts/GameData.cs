@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameData : MonoBehaviour {
 
 	// needs to be static so we canpass it between scenes!
-	public int playerLives;
+	public static int playerLives;
 	public static int score;
 	public static int colFound;
 
@@ -15,7 +15,7 @@ public class GameData : MonoBehaviour {
 	void Start () 
 	{
 		colFound = 0;
-		playerLives = 5;
+		playerLives = 3;
 		score = 0;
 	}
 	
@@ -44,19 +44,19 @@ public class GameData : MonoBehaviour {
 		}
 	}
 
-    public int getLives()
-    {
-        return playerLives;
-    }
-
 	public static int getScore()
 	{
 		return score;
 	}
 
-	public int getCollect()
+	public static int getCollect()
 	{
 		return colFound;
+	}
+
+	public static int getLives()
+	{
+		return playerLives;
 	}
 
 	void GameOver()

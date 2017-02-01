@@ -1,18 +1,16 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
 
 public class Pickup : MonoBehaviour {
 
 	public GameObject player;
-	private GameData gameManager;
+	public GameData gameManager;
 
-    // Use this for initialization
-    void Start () {
-
-        //player = GameObject.FindGameObjectWithTag (tag:player);
-       gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameData>();
-    }
+	// Use this for initialization
+	void Start () {
+	
+		//player = GameObject.FindGameObjectWithTag (tag:player);
+	}
 	// Update is called once per frame
 	void Update () {
 	
@@ -22,11 +20,9 @@ public class Pickup : MonoBehaviour {
 	{
 		if (col.gameObject == player) 
 		{
-            //adds an addition to collectables
-            gameManager.itemCollected();
-            //destroys the game object
-            Destroy(gameObject);
+			Destroy (gameObject);
 			Debug.Log ("Willy has collected me");
+			gameManager.itemCollected ();
 
 		}
 	}
