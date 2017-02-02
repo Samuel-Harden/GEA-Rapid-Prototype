@@ -1,0 +1,142 @@
+fileFormatVersion: 2
+guid: 32ec3d2dde8ad0f44ba42120c5d385c5
+timeCreated: 1486033946
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: EnemyArrow1_0
+    21300002: EnemyArrow1_1
+    21300004: EnemyArrow1_2
+    21300006: EnemyArrow1_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: EnemyArrow1_0
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 627
+        width: 115
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -57.5, y: 44}
+        - {x: -57.5, y: -44}
+        - {x: -11.5, y: -44}
+        - {x: 57.5, y: 0}
+        - {x: 57.5, y: 36}
+        - {x: 34.5, y: 44}
+    - name: EnemyArrow1_1
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 647
+        width: 128
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 43, y: 34}
+        - {x: -64, y: 34}
+        - {x: -64, y: -26}
+        - {x: -62, y: -34}
+        - {x: -29, y: -34}
+        - {x: 55, y: -22}
+        - {x: 64, y: -4}
+        - {x: 64, y: 22}
+    - name: EnemyArrow1_2
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 657
+        width: 118
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 44.5}
+        - {x: -59, y: 44.5}
+        - {x: -59, y: -28.5}
+        - {x: -48, y: -44.5}
+        - {x: 38, y: -44.5}
+        - {x: 59, y: -38.5}
+        - {x: 59, y: -3.5}
+        - {x: 25, y: 42.5}
+    - name: EnemyArrow1_3
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 612
+        width: 113
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45.5, y: -49.5}
+        - {x: 45.5, y: -51.5}
+        - {x: 53.5, y: -51.5}
+        - {x: 54.5, y: -50.5}
+        - {x: 53.5, y: -47.5}
+        - {x: 50.5, y: -47.5}
+      - - {x: 56.5, y: 43.5}
+        - {x: 42.5, y: 51.5}
+        - {x: -56.5, y: 51.5}
+        - {x: -56.5, y: -17.5}
+        - {x: -50.5, y: -18.5}
+        - {x: -32.5, y: -18.5}
+        - {x: -0.5, y: -8.5}
+        - {x: 46.5, y: 8.5}
+        - {x: 56.5, y: 26.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

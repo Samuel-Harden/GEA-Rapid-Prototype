@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: df0f0d47b64c7e740a075d4903e082a3
+timeCreated: 1486032863
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Collectable 1_0
+    21300002: Collectable 1_1
+    21300004: Collectable 1_2
+    21300006: Collectable 1_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Collectable 1_0
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 602
+        width: 228
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 109, y: 74.5}
+        - {x: 105, y: 77.5}
+        - {x: -102, y: 77.5}
+        - {x: -107, y: 70.5}
+        - {x: -107, y: 61.5}
+        - {x: -114, y: 51.5}
+        - {x: -114, y: -52.5}
+        - {x: -108, y: -71.5}
+        - {x: -102, y: -77.5}
+        - {x: 105, y: -77.5}
+        - {x: 108, y: -75.5}
+        - {x: 114, y: -69.5}
+        - {x: 114, y: 51.5}
+    - name: Collectable 1_1
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 564
+        width: 240
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 115.5}
+        - {x: -66, y: 115.5}
+        - {x: -78, y: 105.5}
+        - {x: -120, y: 64.5}
+        - {x: -120, y: 40.5}
+        - {x: -113, y: 24.5}
+        - {x: -108, y: -9.5}
+        - {x: -62, y: -52.5}
+        - {x: -18, y: -94.5}
+        - {x: 6, y: -115.5}
+        - {x: 65, y: -115.5}
+        - {x: 120, y: -65.5}
+        - {x: 120, y: -5.5}
+        - {x: 7, y: 105.5}
+    - name: Collectable 1_2
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 564
+        width: 155
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 77.5, y: 102.5}
+        - {x: 73.5, y: 106.5}
+        - {x: 51.5, y: 115.5}
+        - {x: -51.5, y: 115.5}
+        - {x: -66.5, y: 108.5}
+        - {x: -73.5, y: 106.5}
+        - {x: -77.5, y: 101.5}
+        - {x: -77.5, y: -102.5}
+        - {x: -73.5, y: -106.5}
+        - {x: -51.5, y: -115.5}
+        - {x: 50.5, y: -115.5}
+        - {x: 51.5, y: -109.5}
+        - {x: 71.5, y: -108.5}
+        - {x: 77.5, y: -101.5}
+    - name: Collectable 1_3
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 564
+        width: 246
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 31.5}
+        - {x: 123, y: 42.5}
+        - {x: 123, y: 65.5}
+        - {x: 116, y: 115.5}
+        - {x: 4, y: 115.5}
+        - {x: -10, y: 106.5}
+        - {x: -123, y: -4.5}
+        - {x: -123, y: -62.5}
+        - {x: -80, y: -115.5}
+        - {x: -4, y: -115.5}
+        - {x: 11, y: -112.5}
+        - {x: 33, y: -76.5}
+        - {x: 116, y: 7.5}
+        - {x: 122, y: 16.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

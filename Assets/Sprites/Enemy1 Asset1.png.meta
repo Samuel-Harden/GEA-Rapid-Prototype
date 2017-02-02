@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: 78b68b09397b5064ba3c3028ce6a866a
+timeCreated: 1486031283
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Enemy1 Asset1_0
+    21300002: Enemy1 Asset1_1
+    21300004: Enemy1 Asset1_2
+    21300006: Enemy1 Asset1_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Enemy1 Asset1_0
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1007
+        width: 315
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 101.5, y: -129}
+        - {x: 122.5, y: -108}
+        - {x: 147.5, y: -84}
+        - {x: 149.5, y: -77}
+        - {x: 150.5, y: -51}
+        - {x: 157.5, y: -50}
+        - {x: 157.5, y: 51}
+        - {x: 149.5, y: 67}
+        - {x: 148.5, y: 86}
+        - {x: 123.5, y: 109}
+        - {x: 100.5, y: 129}
+        - {x: 78.5, y: 154}
+        - {x: 46.5, y: 156}
+        - {x: 43.5, y: 166}
+        - {x: -57.5, y: 166}
+        - {x: -59.5, y: 154}
+        - {x: -90.5, y: 154}
+        - {x: -111.5, y: 133}
+        - {x: -120.5, y: 117}
+        - {x: -136.5, y: 109}
+        - {x: -157.5, y: 88}
+        - {x: -157.5, y: -88}
+        - {x: -151.5, y: -91}
+        - {x: -134.5, y: -110}
+        - {x: -99.5, y: -146}
+        - {x: -88.5, y: -156}
+        - {x: -73.5, y: -154}
+        - {x: -67.5, y: -151}
+        - {x: -64.5, y: -144}
+        - {x: -58.5, y: -166}
+        - {x: 43.5, y: -166}
+        - {x: 44.5, y: -154}
+        - {x: 73.5, y: -155}
+        - {x: 88.5, y: -137}
+    - name: Enemy1 Asset1_1
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 996
+        width: 336
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 107, y: -130}
+        - {x: 145, y: -93}
+        - {x: 156, y: -80}
+        - {x: 156, y: -65}
+        - {x: 168, y: -51}
+        - {x: 168, y: 51}
+        - {x: 151, y: 67}
+        - {x: 137, y: 77}
+        - {x: 132, y: 113}
+        - {x: 105, y: 132}
+        - {x: 79, y: 157}
+        - {x: 53, y: 166}
+        - {x: -51, y: 166}
+        - {x: -53, y: 155}
+        - {x: -83, y: 156}
+        - {x: -107, y: 129}
+        - {x: -130, y: 108}
+        - {x: -148, y: 94}
+        - {x: -158, y: 80}
+        - {x: -156, y: 51}
+        - {x: -168, y: 51}
+        - {x: -168, y: -52}
+        - {x: -156, y: -77}
+        - {x: -149, y: -91}
+        - {x: -126, y: -111}
+        - {x: -108, y: -130}
+        - {x: -89, y: -149}
+        - {x: -81, y: -155}
+        - {x: -63, y: -154}
+        - {x: -57, y: -145}
+        - {x: -51, y: -166}
+        - {x: 51, y: -166}
+        - {x: 53, y: -154}
+        - {x: 79, y: -155}
+        - {x: 86, y: -150}
+    - name: Enemy1 Asset1_2
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1005
+        width: 330
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 87, y: -147}
+        - {x: 104, y: -134}
+        - {x: 130, y: -107}
+        - {x: 149, y: -90}
+        - {x: 155, y: -81}
+        - {x: 165, y: -53}
+        - {x: 165, y: 51}
+        - {x: 150, y: 66}
+        - {x: 136, y: 88}
+        - {x: 133, y: 107}
+        - {x: 111, y: 129}
+        - {x: 79, y: 156}
+        - {x: 53, y: 166}
+        - {x: -51, y: 166}
+        - {x: -51, y: 152}
+        - {x: -64, y: 155}
+        - {x: -83, y: 155}
+        - {x: -90, y: 149}
+        - {x: -110, y: 128}
+        - {x: -156, y: 87}
+        - {x: -156, y: 55}
+        - {x: -165, y: 51}
+        - {x: -165, y: -51}
+        - {x: -151, y: -60}
+        - {x: -155, y: -68}
+        - {x: -158, y: -86}
+        - {x: -127, y: -115}
+        - {x: -83, y: -155}
+        - {x: -63, y: -159}
+        - {x: -57, y: -166}
+        - {x: 51, y: -166}
+        - {x: 53, y: -154}
+        - {x: 78, y: -154}
+        - {x: 81, y: -153}
+    - name: Enemy1 Asset1_3
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 443
+        width: 334
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 106, y: -135}
+        - {x: 139, y: -96}
+        - {x: 156, y: -89}
+        - {x: 157, y: -56}
+        - {x: 167, y: -51}
+        - {x: 167, y: 51}
+        - {x: 151, y: 67}
+        - {x: 133, y: 76}
+        - {x: 136, y: 89}
+        - {x: 136, y: 105}
+        - {x: 105, y: 133}
+        - {x: 80, y: 157}
+        - {x: 53, y: 166}
+        - {x: -50, y: 166}
+        - {x: -51, y: 155}
+        - {x: -78, y: 154}
+        - {x: -84, y: 153}
+        - {x: -132, y: 108}
+        - {x: -143, y: 95}
+        - {x: -156, y: 85}
+        - {x: -155, y: 63}
+        - {x: -167, y: 51}
+        - {x: -167, y: -51}
+        - {x: -155, y: -63}
+        - {x: -155, y: -82}
+        - {x: -146, y: -90}
+        - {x: -125, y: -111}
+        - {x: -81, y: -157}
+        - {x: -58, y: -153}
+        - {x: -51, y: -166}
+        - {x: 51, y: -166}
+        - {x: 54, y: -154}
+        - {x: 79, y: -154}
+        - {x: 82, y: -153}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
